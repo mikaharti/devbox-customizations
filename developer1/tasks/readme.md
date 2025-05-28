@@ -1,1 +1,0 @@
-https://github.com/microsoft/windows-dev-box-setup-scripts

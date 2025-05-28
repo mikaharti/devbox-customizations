@@ -1,5 +1,5 @@
 $schema: "1.0"
-name: "devbox-customization"
+name: "devbox-user-customization"
 userTasks:
   - name: ~/winget
     description: "Install Postman"

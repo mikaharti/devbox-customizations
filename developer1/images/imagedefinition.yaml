@@ -1,5 +1,5 @@
 $schema: "1.0"
-name: devbox-customization
+name: devbox-image-customization
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
 
 userTasks:
@@ -19,3 +19,10 @@ userTasks:
 
         net localgroup docker-users "NT AUTHORITY\Authenticated Users" /ADD
 
+        Write-Host "Start to Install vscode to be used as a default IDE.."
+        choco install -y vscode
+        choco install -y git --package-parameters="'/GitAndUnixToolsOnPath /WindowsTerminal'"
+        
+        Write-Host "Start to Install Chrome and Firefox.."
+        choco install -y googlechrome
+        choco install -y firefox
