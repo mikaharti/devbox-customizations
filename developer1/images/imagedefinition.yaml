@@ -1,25 +1,16 @@
 $schema: "1.0"
 name: devbox-image-customization
 image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
-
 tasks:
-
 - name: winget
   parameters:
     package: Chocolatey.Chocolatey
-    timeout: 1800 # in seconds
-
 - name: winget  
   parameters:
     package: Git.Git
-    timeout: 1800 # in seconds
-
 - name: winget
   parameters:
     package: Microsoft.VisualStudioCode
-    timeout: 1800 # in seconds
-
 - name: winget
   parameters:
     package: Google.Chrome
-    timeout: 1800 # in seconds
