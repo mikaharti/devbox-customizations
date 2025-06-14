@@ -17,3 +17,6 @@ tasks:
 - name: winget
   parameters:
     package: Microsoft.AzureCLI
+- name: winget
+  parameters:
+    package: Docker.DockerDesktop
